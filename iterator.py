@@ -14,6 +14,9 @@ next() method call kore iterable obj er protiti item access kora zay.
 for loop diye ierable obj er sob gulu item eksathe access kora zay.
                  iterable     vs    iterator
 magic method __iter__            __iter__ and __next__ thake
+memory consume komanur jonno loop bebohar kora ucit.
+onekgulo file eksathe upload na kore loop er maddhyme one by one
+upload korle memmory error hoy na and system khub fast code run kore.
 '''
 # li=[1,2,3]
 # iterObj=iter(li)
@@ -44,7 +47,8 @@ def make_loop(iterableObj):
     iteratorObj=iter(iterableObj)
     try:
         while True:
-            print(next(iteratorObj))
+            item=next(iteratorObj)
+            print(item)
     except StopIteration:
         pass
 
